@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+    <link rel="stylesheet" href="bmi-calculator.css">
+<body>
+    <header class="flags">
+        <a href="index.html">
+            <img src="img/england-flag.png" alt="England Flag">
+        </a>
+
+        <a href="port.html">
+            <img src="img/brazil-flag.png" alt="Brazil Flag">
+        </a>
+
+        <h2 class="idiom">Portuguese Idiom</h2>
+    </header>
+
+    <main class="bmi port-lang">
+        <div class="bmi__top">
+            <div class="bmi__input">
+                <label for="height">Altura (centímetros)</label>
+                <input type="text" id="height" placeholder="altura (cm)">
+            </div>
+
+            <div class="bmi__input">
+                <label for="weight">Peso (kilogramas)</label>
+                <input type="text" id="weight" placeholder="peso (kg)">
+            </div>
+            
+            <button type="button" id="btn-calc">Calcular</button>
+        </div>
+
+        <div class="bmi__table">
+            <p><i class="fas fa-weight"></i>Menos de 18,5 - Abaixo do peso</p>
+            <p><i class="fas fa-weight"></i>Entre 18,5 e 24,99 - Peso normal</p>
+            <p><i class="fas fa-weight"></i>Entre 25 e 29,99 - Sobrepeso</p>
+            <p><i class="fas fa-weight"></i>Entre 30 e 34,99 - Obesidade grau 1</p>
+            <p><i class="fas fa-weight"></i>Entre 35 e 39,99 - Obesidade grau 2</p>
+            <p><i class="fas fa-weight"></i>Acima de 40 - Obesidade grave</p>
+        </div>
+
+        <h2 id="show-bmi">Resultado IMC</h2>
+    </main>    
+
+    <!--JS-->
+    <script src="bmi-calculator.js"></script>
+</body>
+</html>
